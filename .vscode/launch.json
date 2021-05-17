@@ -8,12 +8,13 @@
       "name": "Current TS File",
       "type": "node",
       "request": "launch",
+      "runtimeExecutable": "node",
       "args": ["${relativeFile}"],
-      "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+      "runtimeArgs": ["--nolazy", "-r", "ts-node/register/transpile-only"],
       "envFile": "${workspaceFolder}/.env",
-      "sourceMaps": true,
       "cwd": "${workspaceRoot}",
-      "protocol": "inspector"
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": ["<node_internals>/**", "node_modules/**"]
     },
     {
       "name": "Debug Jest Tests",
