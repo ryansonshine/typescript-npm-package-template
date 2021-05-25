@@ -25,4 +25,4 @@ assignees: ''
 
 - Version: <!-- Version set in package.json -->
 - Platform: <!-- Win/Mac/Linux -->
-- Node.js Version: <!-- Output of running "node --version" -->
+- Node.js Version: <!-- Output of running `node -v` -->
