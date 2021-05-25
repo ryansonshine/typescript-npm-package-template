@@ -2,7 +2,7 @@
 name: "🐛 Bug Report"
 about: Report a reproducible bug or regression.
 title: ''
-labels: requires triage, bug
+labels: bug
 assignees: ''
 
 ---
@@ -25,4 +25,4 @@ assignees: ''
 
 - Version: <!-- Version set in package.json -->
 - Platform: <!-- Win/Mac/Linux -->
-- Node.js Version: <!-- Output of running `node --version` -->
+- Node.js Version: <!-- Output of running "node --version" -->
