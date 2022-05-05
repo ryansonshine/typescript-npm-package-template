@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "ryansonshine",
+      "name": "Ryan Sonshine",
+      "avatar_url": "https://avatars.githubusercontent.com/u/9534477?v=4",
+      "profile": "https://ryansonshine.com",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "typescript-npm-package-template",
+  "projectOwner": "ryansonshine",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
