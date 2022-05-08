@@ -45,6 +45,11 @@ rm *.mybak
 
 Add your npm token to your GitHub repository secrets as `NPM_TOKEN`.
 
+
+### Add GitHub Token
+
+Add your [GitHub personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) to your GitHub repository secrets as `GH_TOKEN`.
+
 ### Add Codecov integration
 
 Enable the Codecov GitHub App [here](https://github.com/apps/codecov).
