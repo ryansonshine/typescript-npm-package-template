@@ -1,4 +1,7 @@
 # typescript-npm-package-template
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Template to kickstart creating a Node.js module using TypeScript and VSCode
 
@@ -49,10 +52,6 @@ Add your npm token to your GitHub repository secrets as `NPM_TOKEN`.
 
 Enable the Codecov GitHub App [here](https://github.com/apps/codecov).
 
-### Add AllContributors GitHub App
-
-Install the AllContributors GitHub App [here](https://github.com/apps/allcontributors/installations/new).
-
 **Remove everything from here and above**
 
 ---
@@ -66,9 +65,6 @@ Install the AllContributors GitHub App [here](https://github.com/apps/allcontrib
 [![Code Coverage][codecov-img]][codecov-url]
 [![Commitizen Friendly][commitizen-img]][commitizen-url]
 [![Semantic Release][semantic-release-img]][semantic-release-url]
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > My awesome module
 
