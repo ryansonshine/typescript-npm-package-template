@@ -7,6 +7,10 @@ on:
       - main
 jobs:
   release:
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: write
     uses: ryansonshine/ryansonshine/.github/workflows/release.yml@main
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
