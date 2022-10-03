@@ -2,12 +2,12 @@
   "name": "typescript-npm-package-template",
   "version": "0.0.0-development",
   "description": "A template for creating npm packages using TypeScript and VSCode",
-  "main": "./lib/src/index.js",
+  "main": "./lib/index.js",
   "files": [
     "lib/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsc --project tsconfig.build.json",
     "clean": "rm -rf ./lib/",
     "cm": "cz",
     "lint": "eslint ./src/ --fix",
