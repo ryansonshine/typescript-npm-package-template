@@ -2,6 +2,11 @@
 # https://github.com/ryansonshine/ryansonshine/blob/main/.github/workflows/codeql-analysis.yml
 name: "CodeQL"
 
+permissions:
+  actions: read
+  security-events: write
+  contents: read
+
 on:
   push:
     branches: [main]
