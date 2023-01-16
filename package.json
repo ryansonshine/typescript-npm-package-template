@@ -6,15 +6,29 @@
   "files": [
     "lib/**/*"
   ],
+  "watch": {
+    "concat-md": {
+      "patterns": [
+        "docs"
+      ],
+      "extensions": "md",
+      "quiet": true
+    }
+  },
   "scripts": {
+    "build:watch": "tsc --watch --project tsconfig.build.json",
     "build": "tsc --project tsconfig.build.json",
     "clean": "rm -rf ./lib/",
     "cm": "cz",
     "lint": "eslint ./src/ --fix",
     "prepare": "husky install",
     "semantic-release": "semantic-release",
+    "concat-md:watch": "npm-watch concat-md",
+    "concat-md": "concat-md --toc --decrease-title-levels --dir-name-as-title docs > README.md",
+    "typedoc:watch": "typedoc --watch",
     "test:watch": "jest --watch",
     "test": "jest --coverage",
+    "watch": "npm-run-all --race --parallel *:watch",
     "typecheck": "tsc --noEmit"
   },
   "repository": {
@@ -52,6 +66,7 @@
     "@types/node": "^12.20.11",
     "@typescript-eslint/eslint-plugin": "^4.22.0",
     "@typescript-eslint/parser": "^4.22.0",
+    "concat-md": "^0.5.0",
     "conventional-changelog-conventionalcommits": "^5.0.0",
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
@@ -60,10 +75,14 @@
     "husky": "^6.0.0",
     "jest": "^27.2.0",
     "lint-staged": "^10.5.4",
+    "npm-run-all": "^4.1.5",
+    "npm-watch": "^0.11.0",
     "prettier": "^2.2.1",
     "semantic-release": "^19.0.2",
     "ts-jest": "^27.0.5",
     "ts-node": "^10.2.1",
+    "typedoc": "^0.23.24",
+    "typedoc-plugin-markdown": "^3.14.0",
     "typescript": "^4.2.4"
   },
   "config": {
