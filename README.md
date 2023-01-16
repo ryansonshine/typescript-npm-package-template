@@ -1,3 +1,24 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [typescript-npm-package-template](#typescript-npm-package-template)
+  - [Features](#features)
+  - [Getting started](#getting-started)
+    - [Set up your repository](#set-up-your-repository)
+    - [Add NPM Token](#add-npm-token)
+    - [Add Codecov integration](#add-codecov-integration)
+- [my-package-name](#my-package-name)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Functions](#functions)
+    - [myPackage](#mypackage)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
+<a name="readmemd"></a>
+
 # typescript-npm-package-template
 
 > Template to kickstart creating a Node.js module using TypeScript and VSCode
@@ -18,6 +39,10 @@ Inspired by [node-module-boilerplate](https://github.com/sindresorhus/node-modul
 - [Jest](https://jestjs.io/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
+- [API Documentation Generation](https://stackoverflow.com/a/57052392/955091)
+  - [TypeDoc](https://typedoc.org/)
+  - [typedoc-plugin-markdown](https://github.com/tgreyuk/typedoc-plugin-markdown/tree/master/packages/typedoc-plugin-markdown)
+  - [concat-md](https://github.com/ozum/concat-md)
 
 ## Getting started
 
@@ -37,7 +62,7 @@ Replace `FULL_NAME`, `GITHUB_USER`, and `REPO_NAME` in the script below with you
 FULL_NAME="John Smith"
 GITHUB_USER="johnsmith"
 REPO_NAME="my-cool-package"
-sed -i.mybak "s/\([\/\"]\)(ryansonshine)/$GITHUB_USER/g; s/typescript-npm-package-template\|my-package-name/$REPO_NAME/g; s/Ryan Sonshine/$FULL_NAME/g" package.json package-lock.json README.md
+sed -i.mybak "s/\([/\"]\)(ryansonshine)/$GITHUB_USER/g; s/typescript-npm-package-template\|my-package-name/$REPO_NAME/g; s/Ryan Sonshine/$FULL_NAME/g" package.json package-lock.json README.md
 rm *.mybak
 ```
 
@@ -80,27 +105,6 @@ myPackage('hello');
 //=> 'hello from my package'
 ```
 
-## API
-
-### myPackage(input, options?)
-
-#### input
-
-Type: `string`
-
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`
-Default: `rainbows`
-
-Lorem ipsum.
-
 [build-img]:https://github.com/ryansonshine/typescript-npm-package-template/actions/workflows/release.yml/badge.svg
 [build-url]:https://github.com/ryansonshine/typescript-npm-package-template/actions/workflows/release.yml
 [downloads-img]:https://img.shields.io/npm/dt/typescript-npm-package-template
@@ -115,3 +119,25 @@ Lorem ipsum.
 [semantic-release-url]:https://github.com/semantic-release/semantic-release
 [commitizen-img]:https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
 [commitizen-url]:http://commitizen.github.io/cz-cli/
+
+## Functions
+
+### myPackage
+
+▸ **myPackage**(`taco?`): `string`
+
+Lorem ipsum.
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `taco` | `string` | `''` |
+
+#### Returns
+
+`string`
+
+#### Defined in
+
+[index.ts:107](https://github.com/Atry/proxy-handler-decorators/blob/0edf17e/src/index.ts#L107)
