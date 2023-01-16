@@ -2,6 +2,14 @@
 # https://github.com/ryansonshine/ryansonshine/blob/main/.github/workflows/codeql-analysis.yml
 name: "CodeQL"
 
+permissions:
+  # required for all workflows
+  security-events: write
+
+  # uncomment the following for private repositories
+  # actions: read
+  # contents: read
+
 on:
   push:
     branches: [main]
