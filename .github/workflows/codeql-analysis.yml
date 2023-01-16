@@ -3,9 +3,12 @@
 name: "CodeQL"
 
 permissions:
-  actions: read
+  # required for all workflows
   security-events: write
-  contents: read
+
+  # uncomment the following for private repositories
+  # actions: read
+  # contents: read
 
 on:
   push:
